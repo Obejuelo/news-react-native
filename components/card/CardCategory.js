@@ -22,7 +22,7 @@ class CardNew extends Component {
     render() {
         return(
             <TouchableHighlight onPress={this.setCategory}>
-                <View style={styles.container}>
+                <View elevation={5} style={styles.container}>
                     <Text style={styles.text}>{this.props.category}</Text>
                 </View>
             </TouchableHighlight>
@@ -35,19 +35,29 @@ export default CardNew;
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#2B303A',
+        backgroundColor: '#fff',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'stretch',
         borderRadius: 10,
         height: 100,
-        marginTop: 10,
+        marginTop: 5,
+        marginBottom: 5,
         marginLeft: 15,
         marginRight: 15,
+        borderWidth: 0.5,
+        shadowColor: '#000000',
+        borderColor: '#d6d7da',
+        shadowOffset: {
+            width: 0,
+            height: 3
+          },
+        shadowRadius: 5,
+        shadowOpacity: 1.0
     },
     text: {
         fontSize: 25,
-        color: '#eee5e9',
+        color: '#7C7C7C',
         textAlign: 'center'
     }
   });

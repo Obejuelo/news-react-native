@@ -16,11 +16,13 @@ export default TabBar;
 const styles = StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
-    backgroundColor: '#2B303A',
+    backgroundColor: '#fff',
     height: 46,
     marginTop: 24,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
   },
   tab: {
     width: 30,
@@ -30,6 +32,6 @@ const styles = StyleSheet.create({
   },
   text: {
       fontSize: 20,
-      color: '#EEE5E9'
+      color: '#7C7C7C'
   }
 });
